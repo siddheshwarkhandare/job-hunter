@@ -1,0 +1,117 @@
+{
+  "data": [
+    {
+      "companyName": "Google",
+      "datePosted": "2026-09-03",
+      "id": "4460496157",
+      "linkedinCompanyName": "google",
+      "linkedinUrl": "https://www.linkedin.com/jobs/view/senior-software-engineer-backend-google-photos-at-google-4460496157",
+      "location": "Mountain View, CA",
+      "postedTimeAgo": "6 days ago",
+      "title": "Senior Software Engineer, Backend, Google Photos"
+    },
+    {
+      "companyName": "Google",
+      "datePosted": "2026-08-31",
+      "id": "4460053847",
+      "linkedinCompanyName": "google",
+      "linkedinUrl": "https://ro.linkedin.com/jobs/view/senior-software-engineer-google-health-backend-at-google-4460053847",
+      "location": "Bucharest, Bucharest, Romania",
+      "postedTimeAgo": "1 week ago",
+      "title": "Senior Software Engineer, Google Health Backend"
+    },
+    {
+      "companyName": "Google",
+      "datePosted": "2026-09-07",
+      "id": "4462959752",
+      "linkedinCompanyName": "google",
+      "linkedinUrl": "https://www.linkedin.com/jobs/view/software-engineer-backend-google-photos-at-google-4462959752",
+      "location": "Mountain View, CA",
+      "postedTimeAgo": "1 day ago",
+      "title": "Software Engineer, Backend, Google Photos"
+    },
+    {
+      "companyName": "Google",
+      "datePosted": "2026-09-08",
+      "id": "4454292318",
+      "linkedinCompanyName": "google",
+      "linkedinUrl": "https://in.linkedin.com/jobs/view/software-engineer-iii-payments-at-google-4454292318",
+      "location": "Hyderabad, Telangana, India",
+      "postedTimeAgo": "1 day ago",
+      "title": "Software Engineer III, Payments"
+    },
+    {
+      "companyName": "Google",
+      "datePosted": "2026-08-31",
+      "id": "4460038226",
+      "linkedinCompanyName": "google",
+      "linkedinUrl": "https://www.linkedin.com/jobs/view/senior-software-engineer-at-google-4460038226",
+      "location": "Addison, TX",
+      "postedTimeAgo": "1 week ago",
+      "title": "Senior Software Engineer"
+    },
+    {
+      "companyName": "Google",
+      "datePosted": "2026-08-27",
+      "id": "4458652117",
+      "linkedinCompanyName": "google",
+      "linkedinUrl": "https://www.linkedin.com/jobs/view/senior-software-engineer-at-google-4458652117",
+      "location": "Boulder, CO",
+      "postedTimeAgo": "1 week ago",
+      "title": "Senior Software Engineer"
+    },
+    {
+      "companyName": "Google",
+      "datePosted": "2026-08-20",
+      "id": "4455686673",
+      "linkedinCompanyName": "google",
+      "linkedinUrl": "https://sg.linkedin.com/jobs/view/software-engineer-google-pay-consumer-payments-at-google-4455686673",
+      "location": "Singapore",
+      "postedTimeAgo": "2 weeks ago",
+      "title": "Software Engineer, Google Pay, Consumer Payments"
+    },
+    {
+      "companyName": "Google",
+      "datePosted": "2026-09-07",
+      "id": "4454251610",
+      "linkedinCompanyName": "google",
+      "linkedinUrl": "https://pl.linkedin.com/jobs/view/software-engineer-iii-health-and-home-at-google-4454251610",
+      "location": "Warsaw, Mazowieckie, Poland",
+      "postedTimeAgo": "2 days ago",
+      "title": "Software Engineer III, Health and Home"
+    },
+    {
+      "companyName": "Google",
+      "datePosted": "2026-08-31",
+      "id": "4460038231",
+      "linkedinCompanyName": "google",
+      "linkedinUrl": "https://br.linkedin.com/jobs/view/software-engineer-backend-infrastructure-english-portuguese-at-google-4460038231",
+      "location": "Greater São Paulo Area",
+      "postedTimeAgo": "1 week ago",
+      "title": "Software Engineer, Backend, Infrastructure (English, Portuguese)"
+    },
+    {
+      "companyName": "Google",
+      "datePosted": "2026-08-27",
+      "id": "4458631161",
+      "linkedinCompanyName": "google",
+      "linkedinUrl": "https://ca.linkedin.com/jobs/view/software-developer-enterprise-chat-google-cloud-at-google-4458631161",
+      "location": "Waterloo, Ontario, Canada",
+      "postedTimeAgo": "1 week ago",
+      "title": "Software Developer, Enterprise Chat, Google Cloud"
+    }
+  ],
+  "meta": {
+    "position": 0,
+    "count": 10,
+    "nextToken": "dD0xMDtxPWphdmE7bD1Xb3JsZHdpZGU7ZHA9bW9udGg7ZXQ9Y29udHJhY3RvcjpmdWxsdGltZTpwYXJ0dGltZTppbnRlcm46dGVtcG9yYXJ5O2VsPWludGVybjplbnRyeTphc3NvY2lhdGU6bWlkU2VuaW9yOmRpcmVjdG9yO3d0PXJlbW90ZTpoeWJyaWQ6b25TaXRlO3A9MTtvaT0xNDQx"
+  },
+  "_links": {
+    "self": "/v2/linkedin/search?datePosted=month&query=java&workplaceTypes=remote%3Bhybrid%3BonSite&experienceLevels=intern%3Bentry%3Bassociate%3BmidSenior%3Bdirector&location=Worldwide&employmentTypes=contractor%3Bfulltime%3Bparttime%3Bintern%3Btemporary&organizationIds=1441",
+    "next": "/v2/linkedin/search?token=dD0xMDtxPWphdmE7bD1Xb3JsZHdpZGU7ZHA9bW9udGg7ZXQ9Y29udHJhY3RvcjpmdWxsdGltZTpwYXJ0dGltZTppbnRlcm46dGVtcG9yYXJ5O2VsPWludGVybjplbnRyeTphc3NvY2lhdGU6bWlkU2VuaW9yOmRpcmVjdG9yO3d0PXJlbW90ZTpoeWJyaWQ6b25TaXRlO3A9MTtvaT0xNDQx"
+  },
+  "errors": [],
+  "warnings": [],
+  "hasError": false,
+  "hasWarning": false
+}

@@ -1,13 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Home</title>
 <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}">
-    <title>Home</title>
-</head>
 <body>
 
-    <h1 style="color: aliceblue;">hellow</h1>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-4V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2Z"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+      AI job hunter
+    </div>
+    <nav class="main-nav">
+      <a class="active">Jobs</a>
+      <a>Saved</a>
+      <a>Resume</a>
+      <a>Applications</a>
+    </nav>
+    <div class="header-right">
+      <button class="btn btn-accent">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+        Upload resume
+      </button>
+      <div class="avatar">SK</div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <!-- Resume card (rendered by renderResume in script.js) -->
+    <div id="resume-card"></div>
+
+    <!-- Search -->
+    <form class="search-bar" id="search-form">
+      <input type="text" id="role-input" placeholder="Job title, e.g. Backend engineer" value="Backend engineer" />
+      <input type="text" id="location-input" class="location" placeholder="Location" value="Remote" />
+      <button type="submit" class="btn btn-primary" id="search-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <span id="search-btn-label">Search</span>
+      </button>
+    </form>
+
+    <!-- Filter / sort bar -->
+    <div class="filter-bar">
+      <div class="filter-group">
+        <label for="match-filter">Match</label>
+        <select id="match-filter">
+          <option value="all">All matches</option>
+          <option value="strong">Strong (80%+)</option>
+          <option value="partial">Partial (60–79%)</option>
+          <option value="weak">Weak (&lt;60%)</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="missing-filter">Missing skills</label>
+        <select id="missing-filter">
+          <option value="all">Any</option>
+          <option value="none">No missing skills</option>
+          <option value="has">Has missing skills</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="sort-select">Sort by</label>
+        <select id="sort-select">
+          <option value="match-desc">Match score (high to low)</option>
+          <option value="match-asc">Match score (low to high)</option>
+          <option value="title-asc">Job title (A–Z)</option>
+        </select>
+      </div>
+
+      <button class="btn btn-outline" id="clear-filters-btn" type="button">Clear filters</button>
+    </div>
+
+    <!-- Results header -->
+    <div class="results-header">
+      <h2 id="results-count">24 jobs found</h2>
+      <span class="sort-label" id="sort-label">Sorted by match score</span>
+    </div>
+
+    <!-- Job list -->
+    <div id="job-list"></div>
+
+  </div>
+</main>
+
+<input type="file" id="resume-file-input" accept=".pdf,.doc,.docx" style="display:none" />
+
+  <script src="{{ url_for('static', path='js/logic.js') }}"></script>
 </body>
 </html>
