@@ -1,0 +1,59 @@
+
+===== PAGE 1 =====
+SIDDHESHWAR KHANDARE 
++91 9322949020   |   khandaresiddheshwar5@gmail.com   |   LinkedIn   |   GitHub   |   Chhatrapati Sambhajinagar, Maharashtra 
+PROFESSIONAL SUMMARY 
+Final-year Computer Science and Design student specializing in machine learning and backend development, with hands-on 
+experience building computer vision models and REST APIs. Skilled in Python, FastAPI, and Scikit-learn, with working exposure 
+to Generative AI and vector databases. Seeking an entry-level Software role to apply production-oriented engineering skills 
+and grow within a fast-paced team. 
+EDUCATION 
+B.Tech, Computer Science and Design — Maharashtra Institute of Technology (Autonomous), Chhatrapati Sambhajinagar 
+CGPA 7.17  |  2022 – 2026 
+HSC — Lal Bahadur Shastri College, Partur, Jalna  |  Maharashtra State Board  |  76%  |  2022 
+SSC — Vishwanath Vidyalaya, Talni, Jalna  |  Maharashtra State Board  |  80%  |  2020 
+PROJECTS 
+Smart Attendance System  |  Python, OpenCV, Streamlit, MySQL 
+●​
+Built a contactless, face-recognition-based attendance system that replaced manual roll-call, using OpenCV for 
+real-time face detection and MySQL for attendance logging. 
+●​
+Achieved 89% face-recognition accuracy across a test group of 4 students, cutting attendance-marking time from 10 
+minutes to 1 minute per class. 
+●​
+Designed a Streamlit dashboard for instructors to view real-time attendance logs and export reports, removing the 
+need for manual register reconciliation. 
+Repository: github.com/deepesh-agrawal1/Smart-attendance-System 
+Patient Management REST API  |  Python, FastAPI, Pydantic 
+●​
+Built a full CRUD REST API for managing patient records, with endpoints to create, view, update, sort, and retrieve 
+individual patients. 
+●​
+Designed Pydantic data models with field-level validation (type, range, and format checks) to enforce data integrity 
+on every request and return structured error responses for invalid input. 
+●​
+Implemented computed fields to auto-calculate BMI and health-risk category (e.g., underweight, normal, obese) 
+from patient height and weight. 
+●​
+Added query-based sorting (by height, weight, or BMI, ascending/descending) and proper HTTP status/error 
+handling (400/404) for invalid requests. 
+Repository: github.com/siddheshwarkhandare/fast-api 
+TECHNICAL SKILLS 
+●​
+Languages: Python, flask,html,css 
+●​
+Python libraries: Scikit-learn, NumPy, Pandas, Matplotlib, 
+●​
+Backend: FastAPI, Pydantic, REST API design 
+●​
+Generative AI: LLM fine-tuning fundamentals,  
+●​
+Database: SQL, MySQL 
+●​
+Tools: Git, GitHub, MS Office 
+CERTIFICATIONS 
+●​
+Oracle Cloud Infrastructure – AI Foundations 
+●​
+IBM SkillsBuild – Data Science 101 
+

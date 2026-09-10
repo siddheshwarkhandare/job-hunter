@@ -31,3 +31,6 @@ except requests.exceptions.RequestException as e:
     print("HTTP error:", e)
 
 
+print(type(data))
+
+

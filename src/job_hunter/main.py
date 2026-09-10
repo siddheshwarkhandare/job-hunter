@@ -3,6 +3,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from pathlib import Path
 from dotenv import load_dotenv
+import requests
 
 import fitz 
 import os
@@ -14,7 +15,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 load_dotenv()
 JOB_SEARCH=os.getenv("JOB_SEARCH_API")
 
-print(JOB_SEARCH)
+
 
 app.mount("/static", StaticFiles(directory=BASE_DIR/"static"), name="static")
 templates = Jinja2Templates(directory=BASE_DIR/"templates")
