@@ -1,14 +1,22 @@
 from fastapi import FastAPI, Request,UploadFile,File,HTTPException
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+from groq import Groq
 from pathlib import Path
 from dotenv import load_dotenv
 import requests
+import pymupdf
+
 
 import fitz 
 import os
 
 app = FastAPI()
+
+client = Groq(
+    api_key=os.getenv("Groq_Api")
+)
+
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 

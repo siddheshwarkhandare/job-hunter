@@ -30,3 +30,5 @@ with open(output_path, "w", encoding="utf-8") as out:
 doc.close()
 
 print("PDF data extracted successfully.")
+
+
