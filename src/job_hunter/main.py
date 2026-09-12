@@ -1,11 +1,13 @@
-from fastapi import FastAPI, Request,UploadFile,File,HTTPException
+from fastapi import FastAPI, Request,UploadFile,File,HTTPException, UploadFile
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-from groq import Groq
+from google import genai
+from google.genai import types
 from pathlib import Path
 from dotenv import load_dotenv
 import requests
 import pymupdf
+import json
 
 
 import fitz 
@@ -13,9 +15,7 @@ import os
 
 app = FastAPI()
 
-client = Groq(
-    api_key=os.getenv("Groq_Api")
-)
+Client = genai.Client(api_key="Api")
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
@@ -57,3 +57,25 @@ async def upload_pdf(file: UploadFile = File(...)):
         "word_count": len(text.split()),
     }
 
+
+
+
+SYSTEM_PROMPT = (
+    "You extract technical skills from resume text. "
+    'Respond with ONLY a JSON object: {"skills": ["skill1", "skill2"]}. '
+    "List specific technologies, languages, frameworks, and tools only — "
+    "no soft skills, no sentences."
+)
+''''
+async def geting_skill(resume_text: str):
+    try:
+        response = await Client.aio.models.generate_content(
+            model="gemini-2.5-flash-lite",
+            contents=f'{SYSTEM_PROMPT}\n\nResume text: \n{resume_text[:4000]}',
+            config=types.GenerateContentConfig(response_mime_type="application/json"),
+
+        )
+        parsed = SkillsResult.model_validate(json.loads(response.text))
+        return sorted({s.lower() for s in parsed.skills})
+
+'''
